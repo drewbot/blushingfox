@@ -22,7 +22,7 @@ App.ApplicationSerializer = DS.FirebaseSerializer.extend();
 
 App.Router.map(function(){
 	this.resource('app', function(){
-		this.resource('gallery')
+		this.resource('gallery');
 		this.resource('about');
 		this.resource('blog');
 		this.resource('contact');
@@ -111,7 +111,6 @@ App.GalleryController = Ember.ArrayController.extend({
 	actions:{
 
 	}
-
 });
 
 

@@ -28,12 +28,39 @@
         <script type="text/x-handlebars" id="app">
           <div class="temp-container">
             <h2>Under Construction</h2>
+            <ul>
+              {{#link-to 'gallery'}}<li>home</li>{{/link-to}}
+              {{#link-to 'about'}}<li>about</li>{{/link-to}}
+              {{#link-to 'blog'}}<li>blog</li>{{/link-to}}
+              {{#link-to 'contact'}}<li>contact</li>{{/link-to}}
+            </ul>
+          </div>
+          <div class="main-container">
+            {{outlet}}
           </div>
         </script>
 
         <script type="text/x-handlebars" id="gallery">
           <div class="temp-container">
-            <h2>Under Construction</h2>
+            <p>Fixie wolf cred American Apparel. Occupy +1 umami, Austin Kickstarter church-key typewriter tote bag Echo Park VHS salvia craft beer banh mi brunch High Life. Actually Bushwick try-hard, semiotics normcore kitsch blog butcher twee sartorial pork belly Kickstarter Banksy. Actually iPhone chillwave Banksy sustainable. Slow-carb pug stumptown direct trade food truck, Austin yr banh mi cardigan mustache Kickstarter pork belly skateboard wayfarers. Banjo tofu vegan, stumptown chia gluten-free keffiyeh leggings organic literally hella fingerstache salvia. Paleo raw denim church-key Tonx cardigan fanny pack.</p>
+          </div>
+        </script>
+
+        <script type="text/x-handlebars" id="about">
+          <div class="temp-container">
+            <h2>About</h2>
+          </div>
+        </script>
+
+        <script type="text/x-handlebars" id="blog">
+          <div class="temp-container">
+            <h2>Blog</h2>
+          </div>
+        </script>
+
+        <script type="text/x-handlebars" id="contact">
+          <div class="temp-container">
+            <h2>Contact</h2>
           </div>
         </script>
 
