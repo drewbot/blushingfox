@@ -1,3 +1,8 @@
+//****** Lightbox ******
+
+//Problem: User when clicking on image goes to a dead end
+//Solution: Create an overlay with the large image - Lightbox
+
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
@@ -35,4 +40,5 @@ $overlay.click(function() {
   //Hide overlay
   $overlay.hide();
 });
+
   

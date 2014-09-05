@@ -1,5 +1,3 @@
-
-
 //****** Menu ******
 
 //Problem: It look gross in smaller browser widths and small devices
