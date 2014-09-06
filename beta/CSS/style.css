@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic);
 
+@font-face {
+    font-family: 'icon'; /*a name to be used later*/
+    src: url('leksico-webfont.ttf'); /*URL to font*/
+}
+
 * {
 	-moz-box-sizing: border-box; 
   	-webkit-box-sizing: border-box; 
@@ -24,55 +29,6 @@ body {
   	body {
 		max-width: 600px;
 	}
-}
-
-/* ---- Header ----- */
-
-.logo img {
-	display: block;
-	margin: 0 auto;
-	margin-top: 40px;
-}
-
-.nav {
-	display: none;
-	padding-top: 10px;
-	list-style: none;
-	float: right;
-}
-
-.clear-float {
-	clear: right;
-}
-
-.nav li {
-	display: inline-block;
-	width: 84px;
-	font-style: italic;
-	line-height: 60px;
-	text-align: center;
-}
-
-.nav li a {
-	color: #000000;
-	width: 100%;
-	text-decoration: none;
-}
-
-.nav li:hover a {
-	color: #F0775A;
-}
-
-.nav li.selected {
-	/*background: #000000;*/
-}
-
-.nav li.selected a {
-	color: #B3B3B3;
-}
-
-.nav li.selected a:hover {
-	color: #F0775A;
 }
 
 /* Global */
@@ -103,10 +59,81 @@ p {
 	}
 }
 
+/* ---- Header ----- */
+
+.logo img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 55px;
+}
+
+.menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+    padding: 8px 20px;
+    font-family: 'icon';
+    font-size: 3.2em;
+    line-height: 0.5;
+    color: #FFF;
+    background-color: #F0775A;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.menu-open {
+	color: #3B3B3B;
+}
+
+.nav {
+	display: none;
+	position: fixed;
+	top: 51px;
+	right: 0px;
+	margin: 0 10px 0 0;
+	padding: 10px 0 10px 0;
+	list-style: none;
+	font-weight: 300;
+	background-color: #3B3B3B;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.show-nav {
+	display: inline;
+}
+
+.nav li {
+
+	width: 83px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.nav li a {
+	color: #FFF;
+	width: 100%;
+	text-decoration: none;
+}
+
+.nav li:hover {
+	background-color: #F0775A;
+}
+
+.nav li.selected {
+	/*background: #000000;*/
+}
+
+.nav li.selected a {
+	color: #B3B3B3;
+}
+
 /* ---- Home Page ----- */
 
 .homeCopy {
-	padding: 10px 10px 30px 10px;
+	padding: 0 10px 40px 10px;
 	max-width: 940px;
 	color: #000000;
 	font-size: 1.2em;
