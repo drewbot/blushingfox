@@ -61,6 +61,13 @@ p {
 
 /* ---- Header ----- */
 
+/* TF? */
+/*.logo {
+	display: block;
+	height: 195;
+	width: 150;
+}*/
+
 .logo img {
 	display: block;
 	margin: 0 auto;
@@ -83,6 +90,10 @@ p {
     z-index: 9999;
 }
 
+.menu:hover {
+	background-color: #FC8F7A;
+}
+
 .menu-open {
 	color: #3B3B3B;
 }
@@ -93,7 +104,7 @@ p {
 	top: 51px;
 	right: 0px;
 	margin: 0 10px 0 0;
-	padding: 10px 0 10px 0;
+	padding: 15px 0 15px 0;
 	list-style: none;
 	font-weight: 300;
 	background-color: #3B3B3B;
@@ -112,21 +123,17 @@ p {
 	line-height: 40px;
 }
 
-.nav li a {
+.nav a {
 	color: #FFF;
 	width: 100%;
 	text-decoration: none;
 }
 
 .nav li:hover {
-	background-color: #F0775A;
+	background-color: #4A4A4A;
 }
 
 .nav li.selected {
-	/*background: #000000;*/
-}
-
-.nav li.selected a {
 	color: #B3B3B3;
 }
 
