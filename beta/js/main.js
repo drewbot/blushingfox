@@ -19,15 +19,14 @@ $(document).click(function(event){
 })
 
 // Mouseover events
-var $overlay = $('<div id="overlay"></div>');
-var $caption = $("<p></p>");
+var $caption = $('<p class="overlay-caption"></p>');
+var $overlay = $('<div class="item-overlay">')
 
-$( ".item" )
-  .mouseover(function() {
-    var captionText = $(this).children("img").attr("alt");
+$('.item').mouseover(function() {
+    var captionText = $(this).find('img').attr('alt');
     console.log(captionText)
-  })
+    $caption.text(captionText);
+    $(this).append($overlay);
+    $(this).append($caption);
+})
 
-  .mouseout(function() {
-    console.log('mouseout')
-  });
