@@ -14,19 +14,22 @@
 
 
 body {
-	max-width: 1000px;
-	background: #fff;
 	font-family: 'Lato', sans-serif;
 }
 
+.main-content {
+	max-width: 1000px;
+	padding-bottom: 60px;
+}
+
 @media (max-width: 1000px) {
-  	body {
+  	.main-content {
 		max-width: 700px;
 	}
 }
 
 @media (max-width: 680px) {
-  	body {
+  	.main-content {
 		max-width: 600px;
 	}
 }
@@ -60,13 +63,6 @@ p {
 }
 
 /* ---- Header ----- */
-
-/* TF? */
-/*.logo {
-	display: block;
-	height: 195;
-	width: 150;
-}*/
 
 .logo img {
 	display: block;
@@ -138,11 +134,47 @@ p {
 }
 
 .nav li:hover {
-	background-color: #4A4A4A;
+	background-color: rgba(74, 74, 74, 0.7);
 }
 
 .nav li.selected {
 	color: #B3B3B3;
+}
+
+/* ---- Footer ---- */
+
+footer {
+	height: 300px;
+	width: 100%;
+	background-color: #000;
+}
+
+.footer-content {
+	padding: 50px 0 0 0;
+	max-width: 1000px;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	padding: 0 10px 0 10px;
+	color: #FFF;
+}
+
+.footer-nav a:hover {
+	color: #FC8F7A;
+}
+
+.footer-nav li {
+	display: inline;
+	list-style: none;
+}
+
+.footer-selected {
+	color: #B3B3B3;
+}
+
+.footer-selected:hover {
+	color: #FC8F7A;
 }
 
 /* ---- Home Page ----- */
@@ -270,7 +302,6 @@ span:hover {
 	margin-left:auto;
 	margin-right:auto;
 	font-size: 1.1em;
-	/*font-style: italic;*/
 	padding: 3px 10px 20px 10px;
 	border-bottom: 2px solid #000000;
 	max-width: 410px;

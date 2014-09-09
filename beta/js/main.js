@@ -1,15 +1,15 @@
 
-// Click to show and hide nav
+// Click menu to show and hide nav
 $('.menu').click(function(){
-	$('.nav').toggleClass('show-nav');
-	$('.menu').toggleClass('menu-open');
-	$('.menu-x').toggleClass('menu-x-open');
+	$('.nav').addClass('show-nav');
+	$('.menu').addClass('menu-open');
+	$('.menu-x').addClass('menu-x-open');
 })
 
 $('.menu-x').click(function(){
-	$('.nav').toggleClass('show-nav');
-	$('.menu').toggleClass('menu-open');
-	$('.menu-x').toggleClass('menu-x-open');
+	$('.nav').removeClass('show-nav');
+	$('.menu').removeClass('menu-open');
+	$('.menu-x').removeClass('menu-x-open');
 })
 
 // Mouseover events
