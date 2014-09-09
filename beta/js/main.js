@@ -3,18 +3,14 @@
 $('.menu').click(function(){
 	$('.nav').toggleClass('show-nav');
 	$('.menu').toggleClass('menu-open');
+	$('.menu-x').toggleClass('menu-x-open');
 })
 
-// *--- Click outside of nav to hide when nav is visible --*
-$(document).on('click', function() {
-  	if (!$(this).hasClass('nav')) {
-	  	if ($('.nav').hasClass('show-nav')) {
-			console.log('true that')
-  		} else {
-  			console.log('woop woop')
-  		}
-	}
-});
+$('.menu-x').click(function(){
+	$('.nav').toggleClass('show-nav');
+	$('.menu').toggleClass('menu-open');
+	$('.menu-x').toggleClass('menu-x-open');
+})
 
 // Mouseover events
 var $overlay = $('<div class="item-overlay"></div>');
