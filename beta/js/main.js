@@ -1,18 +1,24 @@
 
-// Click menu to show and hide nav
-$('.menu').click(function(){
+// Click logo to go to home page
+$('.logo').click(function(){
+	window.location.href = "index.html";
+})
+
+// Click menu icon to show nav
+$('.menu-icon').click(function(){
 	$('.nav').addClass('show-nav');
-	$('.menu').addClass('menu-open');
-	$('.menu-x').addClass('menu-x-open');
+	$('.menu-icon').addClass('menu-open'); // Hide menu icon
+	$('.menu-x-icon').addClass('menu-x-open'); // Display close icon
 })
 
-$('.menu-x').click(function(){
+// Click menu-x icon to hide nav
+$('.menu-x-icon').click(function(){
 	$('.nav').removeClass('show-nav');
-	$('.menu').removeClass('menu-open');
-	$('.menu-x').removeClass('menu-x-open');
+	$('.menu-icon').removeClass('menu-open'); // Display menu icon
+	$('.menu-x-icon').removeClass('menu-x-open'); // Hide close icon
 })
 
-// Mouseover events
+// Dynamic gallery item mouseover events
 var $overlay = $('<div class="item-overlay"></div>');
 var $caption = $('<p class="overlay-caption"></p>');
 var $icon = $('<p class="overlay-icon">z</p>');
