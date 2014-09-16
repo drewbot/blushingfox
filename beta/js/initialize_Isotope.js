@@ -18,13 +18,13 @@ $('.dynamic-gallery').isotope({
 // Call button by class for click action to be applied to
 // Filter within a specified container by specified classname
 $('.filter-one').click(function(){
-	$('.container').isotope({ filter: '.item-one' })
+	$('.dynamic-gallery').isotope({ filter: '.item-one' })
 })
 
 $('.filter-two').click(function(){
-	$('.container').isotope({ filter: '.item-two' })
+	$('.dynamic-gallery').isotope({ filter: '.item-two' })
 })
 
 $('.filter-all').click(function(){
-	$('.container').isotope({ filter: '*' })
+	$('.dynamic-gallery').isotope({ filter: '*' })
 })

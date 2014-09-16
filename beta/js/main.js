@@ -1,4 +1,12 @@
 
+// Searching for a way to refresh the homepage with the back button
+$(document).ready(function(){
+	if (document.referrer == "file:///Users/dalyjonesmac/Projects/blushingfox/beta/index.html") {
+    	window.location.reload(); 
+	}
+})
+
+
 // Click logo to go to home page
 $('.logo').click(function(){
 	window.location.href = "index.html";
@@ -21,7 +29,8 @@ $('.menu-x-icon').click(function(){
 // Dynamic gallery item mouseover events
 var $overlay = $('<div class="item-overlay"></div>');
 var $caption = $('<p class="overlay-caption"></p>');
-var $icon = $('<p class="overlay-icon">z</p>');
+var $icon = $('<i class="fa fa-th overlay-icon"></i>');
+// var $icon = $('<i class="fa fa-share overlay-icon"></i>');   Arrow out option
 
 $('.item').mouseover(function() {
     var captionText = $(this).find('img').attr('alt');
@@ -31,5 +40,8 @@ $('.item').mouseover(function() {
     $(this).children('a').append($overlay);
     $(this).children('a').append($caption);
     $(this).children('a').append($icon);
+    // $(this).children('a').append($overlay).show('slow');  Can't seem to get overlay transition to work
+    // $(this).children('a').append($caption).show('slow');  in css or js
+    // $(this).children('a').append($icon).show('slow');
 })
 

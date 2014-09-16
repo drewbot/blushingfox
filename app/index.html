@@ -44,6 +44,20 @@
           <div class="temp-container">
             <p>Fixie wolf cred American Apparel. Occupy +1 umami, Austin Kickstarter church-key typewriter tote bag Echo Park VHS salvia craft beer banh mi brunch High Life. Actually Bushwick try-hard, semiotics normcore kitsch blog butcher twee sartorial pork belly Kickstarter Banksy. Actually iPhone chillwave Banksy sustainable. Slow-carb pug stumptown direct trade food truck, Austin yr banh mi cardigan mustache Kickstarter pork belly skateboard wayfarers. Banjo tofu vegan, stumptown chia gluten-free keffiyeh leggings organic literally hella fingerstache salvia. Paleo raw denim church-key Tonx cardigan fanny pack.</p>
           </div>
+          <div>
+            {{each}}
+              {{#link-to 'session' this}}
+                <h3>{{title}}</h3>
+              {{/link-to}}
+            {{each}}
+          </div>
+        </script>
+
+        <script type="text/x-handlebars" id="session">
+          <div class="temp-container">
+            <h2>{{title}}</h2>
+            <p>{{introCopy}}</p>
+          </div>
         </script>
 
         <script type="text/x-handlebars" id="about">
@@ -62,6 +76,12 @@
           <div class="temp-container">
             <h2>Contact</h2>
           </div>
+        </script>
+
+        <script type="text/x-handlebars" id="new">
+          <p>Title: {{input type="text" id="title" class="" name="title"}}</p>
+          <p>Intro Copy: {{input type="text" id="intro-copy" class="" name="intro-copy"}}</p>
+          <button type="submit" class="" {{action 'save'}}>Save Session</button>
         </script>
 
 
