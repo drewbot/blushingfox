@@ -25,7 +25,7 @@
         <![endif]-->
 
 
-        <script type="text/x-handlebars" id="app">
+        <script type="text/x-handlebars">
           <div class="temp-container">
             <h2>Under Construction</h2>
             <ul>
@@ -45,11 +45,11 @@
             <p>Fixie wolf cred American Apparel. Occupy +1 umami, Austin Kickstarter church-key typewriter tote bag Echo Park VHS salvia craft beer banh mi brunch High Life. Actually Bushwick try-hard, semiotics normcore kitsch blog butcher twee sartorial pork belly Kickstarter Banksy. Actually iPhone chillwave Banksy sustainable. Slow-carb pug stumptown direct trade food truck, Austin yr banh mi cardigan mustache Kickstarter pork belly skateboard wayfarers. Banjo tofu vegan, stumptown chia gluten-free keffiyeh leggings organic literally hella fingerstache salvia. Paleo raw denim church-key Tonx cardigan fanny pack.</p>
           </div>
           <div>
-            {{each}}
+            {{#each}}
               {{#link-to 'session' this}}
                 <h3>{{title}}</h3>
               {{/link-to}}
-            {{each}}
+            {{/each}}
           </div>
         </script>
 

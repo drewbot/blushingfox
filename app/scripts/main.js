@@ -21,15 +21,12 @@ App.ApplicationSerializer = DS.FirebaseSerializer.extend();
 ///////////////////////////////////////////////////////////////////////
 
 App.Router.map(function(){
-	this.resource('app', function(){
-		this.resource('gallery');
-		this.resource('about');
-		this.resource('blog');
-		this.resource('contact');
-		this.resource('session', {path: ':session_id/session'});
-		this.resource('new');
-	});
-
+	this.resource('gallery');
+	this.resource('about');
+	this.resource('blog');
+	this.resource('contact');
+	this.resource('session', {path: ':session_id/session'});
+	this.resource('new');
 });
 
 ///////////////////////////////////////////////////////////////////////
@@ -43,7 +40,7 @@ App.IndexRoute = Ember.Route.extend({
     }
 });
 
-App.AppRoute = Ember.Route.extend({
+App.ApplicationRoute = Ember.Route.extend({
     model: function(params) {
       return this.store.findAll("portfolio");
     }
@@ -133,7 +130,7 @@ Ember.TextField.reopen({
 });
 
 //////////////////////////// Dashboard Controller /////////////////////////////////
-App.GalleryController = Ember.ArrayController.extend({
+App.AppController = Ember.ArrayController.extend({
 	// itemController: 'portfolio',
 
 	actions:{
