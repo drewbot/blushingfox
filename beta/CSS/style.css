@@ -19,7 +19,7 @@ body {
 
 .main-content {
 	max-width: 1000px;
-	padding-bottom: 55px;
+	padding-bottom: 65px;
 }
 
 @media (max-width: 1000px) {
@@ -79,7 +79,7 @@ p {
     margin: 10px;
     padding: 8px 15px;
     font-family: 'icon';
-    font-size: 4em;
+    font-size: 5em;
     line-height: 0.5;
     color: #F0775A;
     cursor: pointer;
@@ -165,13 +165,13 @@ p {
 /* ---- Footer ---- */
 
 footer {
-	height: 250px;
+	height: 320px;
 	width: 100%;
 	background-color: #111111;
 }
 
 .footer-content {
-	padding: 55px 0 0 0;
+	padding: 65px 0 0 0;
 	max-width: 1000px;
 }
 
@@ -204,7 +204,7 @@ footer {
 
 /* - Social - */
 .footer-social {
-	margin: 45px 0 0 0;
+	margin: 55px 0 0 0;
 	font-family: 'icon';
 	font-size: 3em;
 }
