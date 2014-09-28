@@ -12,6 +12,10 @@ $('.logo').click(function(){
 	window.location.href = "index.html";
 })
 
+$('.session-logo').click(function(){
+	window.location.href = "../index.html";
+})
+
 // Click menu icon to show nav
 $('.menu-icon').click(function(){
 	$('.nav').addClass('show-nav');
