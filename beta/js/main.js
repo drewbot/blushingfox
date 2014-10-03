@@ -23,7 +23,21 @@ $('.menu-x-icon').click(function(){
 	$('.menu-x-icon').removeClass('menu-x-open'); // Hide close icon
 })
 
-// // Dynamic gallery item mouseover events
+
+// Google map controls (Maplace.js)
+$(function() {
+  new Maplace({
+	  locations: [{
+	      lat: 34.8268344, 
+	      lon: -82.3878306,
+	      zoom: 12
+	  }],
+	  controls_on_map: false
+  }).Load();
+});
+
+
+// Dynamic gallery item mouseover events
 // var $overlay = $('<div class="item-overlay"></div>');
 // var $caption = $('<p class="overlay-caption"></p>');
 // var $icon = $('<i class="fa fa-th overlay-icon"></i>');
@@ -41,16 +55,4 @@ $('.menu-x-icon').click(function(){
 //     // $(this).children('a').append($caption).show('slow');  in css or js
 //     // $(this).children('a').append($icon).show('slow');
 // })
-
-$(function() {
-  new Maplace({
-	  locations: [{
-	      lat: 34.8268344, 
-	      lon: -82.3878306,
-	      zoom: 12
-	  }],
-	  controls_on_map: false
-  }).Load();
-});
-
 
