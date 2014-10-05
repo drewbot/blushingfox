@@ -18,8 +18,8 @@ body {
 }
 
 .main-content {
-	max-width: 1000px;
 	padding-bottom: 65px;
+	max-width: 1000px;
 }
 
 @media (max-width: 680px) {
@@ -31,10 +31,10 @@ body {
 /* Global */
 
 h1 {
-	margin: 0 0 10px 0;
+	margin: 0 0 60px 0;
 	text-align: center;
 	font-weight: 300;
-	font-size: 2.4em;
+	font-size: 2em;
 	color: #000000;
 }
 
@@ -46,6 +46,7 @@ h2 {
 
 h3 {
 	padding: 0 0 12px 0;
+	color: #E3472E;
 }
 
 p {
@@ -66,10 +67,70 @@ img {
 	display: block;
 }
 
+/* ----- Form Input -----*/
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    // max-width: 500px;
+}
+
+label {
+    margin: 0 0 15px 0;
+    font-size: 1.1em;
+}
+
+label span {
+	padding-left: 10px;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+input, textarea {
+    margin: 0 0 30px 0;
+    padding: 3px 7px 3px 7px;
+    border: 0;
+    font-size: 0.90em;
+    font-weight: 100;
+    background-color: #F2F2F2;
+}
+
+input {
+    height: 28px;
+}
+
+input:focus {
+    outline: none; 
+    border: 2px solid #E3472E;
+}
+
+textarea {
+    height: 158px;
+}
+
+textarea:focus {
+    outline: none; 
+    border: 2px solid #E3472E;
+}
+
+/* Widths */
+
 .half-width {
 	display: inline-block;
-	width: 50%;
-	float: left;
+	padding: 0 20px 35px 20px;
+	vertical-align: top;
+	width: 49.7%;
+}
+
+@media (max-width: 680px) {
+  	.half-width {
+		width: 100%;
+	}
+}
+
+.half-width img {
+	width: 100%;
+	border-radius: 50%;
 }
 
 /* ---- Header ----- */
@@ -82,8 +143,18 @@ img {
 	cursor: pointer;
 }
 
+.menu {
+	position: fixed;
+	top: 0px;
+    right: 0px;
+	width: 146px;
+	height: 55px;
+	background-color: #fff;
+	z-index: 9998;
+}
+
 .menu-icon, .menu-x-icon {
-	margin: 10px 20px 0 0;
+	padding: 15px 25px 10px 20px;
 	display: inline-block;
     position: fixed;
     top: 0px;
@@ -91,7 +162,7 @@ img {
     font-family: 'Lato', sans-serif;
 	font-size: 1.15em;
 	vertical-align: middle;
-	color: #F0775A;
+	color: #E3472E;
     cursor: pointer;
     z-index: 9999;
 }
@@ -105,11 +176,11 @@ img {
 }
 
 .menu-icon:hover {
-	color: #FC8F7A;
+	color: #F6553C;
 }
 
 .menu-icon:active {
-	color: #FC8F7A;
+	color: #F6553C;
 }
 
 .menu-open {
@@ -121,11 +192,11 @@ img {
 }
 
 .menu-x-icon:hover {
-	color: #FC8F7A;
+	color: #F6553C;
 }
 
 .menu-x-icon:active {
-	color: #FC8F7A;
+	color: #F6553C;
 }
 
 .menu-x-open {
@@ -193,6 +264,10 @@ footer {
 	max-width: 1000px;
 }
 
+.footer-nav {
+	padding: 0;
+}
+
 .footer-nav a {
 	text-decoration: none;
 	padding: 0 24px 0 0;
@@ -201,10 +276,6 @@ footer {
 
 .footer-nav a:hover {
 	color: #FC8F7A;
-}
-
-.footer-nav ul {
-	/*margin: 0 auto;    why isn't this working? */
 }
 
 .footer-nav li {
@@ -224,6 +295,7 @@ footer {
 /* - Social - */
 .footer-social {
 	margin: 55px 0 0 0;
+	padding: 0;
 	font-family: 'icon';
 	font-size: 2.2em;
 }
@@ -270,15 +342,9 @@ footer {
 	color: rgba(50, 80, 109, 0.8);
 }
 
-#gmap {
-	padding-right: 40px;
-	height: 250px;
-}
-
-
 /* ---- Home Page ----- */
 
-.homeCopy {
+.intro-copy {
 	padding: 0 10px 40px 10px;
 	max-width: 940px;
 	text-align: center;
@@ -287,35 +353,28 @@ footer {
 }
 
 @media (max-width: 1000px) {
-	.homeCopy p {
+	.intro-copy p {
 		max-width: 600px;
 	}
 }
 
-.homeCopy span {
+.intro-copy span {
 	padding: 0 3px 0 3px;
 	font-weight: 300;
-	color: #F0775A;
+	color: #E3472E;
 	text-decoration: none;
 }
 
-.homeCopy span:hover {
+.intro-copy span:hover {
 	cursor: pointer;
-	color: #FC8F7A;
-	opacity: 0.9;
+	color: #F6553C;
 }
 
 /* ---- Gallery ------*/
 
 .dynamic-gallery {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding: 10px 20px 0 20px;
-}
-
-@media (max-width: 680px) {
-  	.dynamic-gallery {
-		max-width: 360px;
-	}
 }
 
 /* -- Items --*/
@@ -383,6 +442,35 @@ figcaption {
 	-webkit-transition: all 0.3s ease;
 }
 
+/* ---- Session ------ */
+
+.session-full {
+	display: inline-block;
+	padding: 0 20px 35px 20px;
+	width: 100%;
+}
+
+.session-full img {
+	width: 100%;
+}
+
+.session-half {
+	display: inline-block;
+	padding: 0 20px 35px 20px;
+	vertical-align: top;
+	width: 49.7%;
+}
+
+@media (max-width: 500px) {
+  	.session-half {
+		width: 100%;
+	}
+}
+
+.session-half img {
+	width: 100%;
+}
+
 /* ---- About Page ----- */
 
 
@@ -412,8 +500,10 @@ figcaption {
 }
 
 /* ---- Contact ---- */
-.contact-content {
-	padding: 0 0 50px 0;
+
+#gmap {
+	padding: 0 20px 10px 20px;
+	height: 250px;
 }
 
 
