@@ -28,7 +28,7 @@ body {
 	}
 }
 
-/* Global */
+/* --- Global --- */
 
 h1 {
 	margin: 0 0 60px 0;
@@ -65,6 +65,32 @@ p {
 
 img {
 	display: block;
+}
+
+.intro-copy {
+	padding: 0 10px 40px 10px;
+	max-width: 940px;
+	text-align: center;
+	color: #000000;
+	font-size: 1.2em;
+}
+
+@media (max-width: 1000px) {
+	.intro-copy p {
+		max-width: 600px;
+	}
+}
+
+.intro-copy span {
+	padding: 0 3px 0 3px;
+	font-weight: 300;
+	color: #E3472E;
+	text-decoration: none;
+}
+
+.intro-copy span:hover {
+	cursor: pointer;
+	color: #F6553C;
 }
 
 /* ----- Form Input -----*/
@@ -357,42 +383,13 @@ footer {
 	color: rgba(50, 80, 109, 0.8);
 }
 
-/* ---- Home Page ----- */
-
-.intro-copy {
-	padding: 0 10px 40px 10px;
-	max-width: 940px;
-	text-align: center;
-	color: #000000;
-	font-size: 1.2em;
-}
-
-@media (max-width: 1000px) {
-	.intro-copy p {
-		max-width: 600px;
-	}
-}
-
-.intro-copy span {
-	padding: 0 3px 0 3px;
-	font-weight: 300;
-	color: #E3472E;
-	text-decoration: none;
-}
-
-.intro-copy span:hover {
-	cursor: pointer;
-	color: #F6553C;
-}
-
-/* ---- Gallery ------*/
+/* --- Home Page --- */
 
 .dynamic-gallery {
 	/*margin: 0 auto;*/
 	padding: 10px 20px 0 20px;
 }
 
-/* -- Items --*/
 .item {
 	position: relative;
 	margin: 10px 10px 6px 10px;
@@ -407,8 +404,6 @@ footer {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	/*width: 100%;
-	height: 100%;*/
 	background-color: #000;
 	z-index: 90;
 	-webkit-transition: all 0.3s ease;
@@ -508,26 +503,33 @@ figcaption {
 
 /* ---- Blog ---- */
 
-.blogcolumn {
-	margin: 0 auto;
-	width: 45%;
+.tumblr_posts {
+	list-style: none;
+	padding: 0;
 }
 
-.blog {
-	margin: 0 auto;
-	margin-top: 3px;
-	font-size: 1.1em;
-	font-style: italic;
+.tumblr_posts li {
+	display: inline-block;
+	padding: 30px 20px 20px 20px;
+	width: 49.7%;
 }
 
-.blogCopy p {
-	color: #000000;
-	margin-left:auto;
-	margin-right:auto;
-	font-size: 1.1em;
-	padding: 3px 10px 20px 10px;
-	border-bottom: 2px solid #000000;
-	max-width: 410px;
+@media (max-width: 1000px) {
+  	.tumblr_posts li {
+		width: 100%;
+	}
+
+	.tumblr_posts p {
+		border-bottom: 1px solid #000;
+	}
+
+}
+
+.tumblr_posts p {
+	margin: 0 auto;
+	padding: 20px 20px 20px 20px;
+	max-width: 800px;
+	text-align: center;
 }
 
 /* ---- Contact ---- */
