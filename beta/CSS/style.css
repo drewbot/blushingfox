@@ -113,6 +113,21 @@ textarea:focus {
     border: 2px solid #E3472E;
 }
 
+#ss-submit {
+	float: right;
+	width: 120px;
+	background-color: #E3472E;
+	color: #FFF;
+}
+
+.clear-right {
+	clear: right;
+}
+
+#ss-submit:hover {
+	cursor: pointer;
+}
+
 /* Widths */
 
 .half-width {
@@ -473,7 +488,23 @@ figcaption {
 
 /* ---- About Page ----- */
 
+.about-copy {
+	padding: 20px 0 0 0;
+}
 
+.about-copy h3 {
+	padding: 50px 0 12px 0;
+}
+
+.about-copy img {
+	padding: 20px;
+}
+
+@media (max-width: 1000px) {
+  	.about-copy img {
+		margin: 30px 0 0 0;
+	}
+}
 
 /* ---- Blog ---- */
 

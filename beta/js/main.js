@@ -24,19 +24,6 @@ $('.menu-x-icon').click(function(){
 })
 
 
-// Google map controls (Maplace.js)
-$(function() {
-  new Maplace({
-	  locations: [{
-	      lat: 34.8268344, 
-	      lon: -82.3878306,
-	      zoom: 12
-	  }],
-	  controls_on_map: false
-  }).Load();
-});
-
-
 // Dynamic gallery item mouseover events
 // var $overlay = $('<div class="item-overlay"></div>');
 // var $caption = $('<p class="overlay-caption"></p>');
