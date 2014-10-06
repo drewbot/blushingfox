@@ -76,8 +76,20 @@ img {
 }
 
 @media (max-width: 1000px) {
+
+	.intro-copy {
+		padding: 0 20px 40px 20px;
+	}
+
 	.intro-copy p {
 		max-width: 600px;
+	}
+}
+
+@media (max-width: 680px) {
+
+	.intro-copy p {
+		max-width: 340px;
 	}
 }
 
@@ -305,6 +317,11 @@ footer {
 	max-width: 1000px;
 }
 
+.footer-content p {
+	font-size: 0.96em;
+	color: #CCCCCC;
+}
+
 .footer-nav {
 	padding: 0;
 }
@@ -322,6 +339,7 @@ footer {
 .footer-nav li {
 	display: inline;
 	list-style: none;
+	text-decoration: underline;
 	font-weight: 300;
 }
 
@@ -335,7 +353,7 @@ footer {
 
 /* - Social - */
 .footer-social {
-	margin: 55px 0 0 0;
+	margin: 55px 0 50px 0;
 	padding: 0;
 	font-family: 'icon';
 	font-size: 2.2em;
@@ -388,6 +406,18 @@ footer {
 .dynamic-gallery {
 	/*margin: 0 auto;*/
 	padding: 10px 20px 0 20px;
+}
+
+@media (max-width: 1000px) {
+  	.dynamic-gallery {
+		width: 680px;
+	}
+}
+
+@media (max-width: 680px) {
+  	.dynamic-gallery {
+		width: 340px;
+	}
 }
 
 .item {
@@ -519,17 +549,19 @@ figcaption {
 		width: 100%;
 	}
 
-	.tumblr_posts p {
-		border-bottom: 1px solid #000;
-	}
-
 }
 
 .tumblr_posts p {
 	margin: 0 auto;
 	padding: 20px 20px 20px 20px;
 	max-width: 800px;
+	border-bottom: 1px solid #000;
 	text-align: center;
+}
+
+.tumblr_posts img {
+	width: 100%;
+	max-width: 320px;
 }
 
 /* ---- Contact ---- */
